@@ -1,0 +1,22 @@
+<div>
+    <h2>Contactar<small> profesional</small></h2>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <form>
+            <input type="text" class="form-control mt-2" placeholder="Nombre">
+            <input type="text" class="form-control mt-2" placeholder="Asunto">
+            <select name="select" class="form-control mt-2">
+                <option *ngFor="let profesional of profesionales" value="value1">{{profesional.nombre}}</option> 
+              </select>
+        </form>
+    </div>
+    <div class="col-6">
+        <div class="form-group">
+
+            <textarea class="form-control" rows="5" id="comment" placeholder="Mensaje"></textarea>
+            <button class="btn btn-block btn-primary"><i class="fas fa-envelope fa-2x"></i></button>
+        </div>
+    </div>
+</div>

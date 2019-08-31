@@ -1,0 +1,55 @@
+<div>
+    <h2>Crear<small> vacante</small> </h2>
+</div>
+
+<div class="row text-right">
+    <div class="col">
+
+        <button [routerLink]="['/vacantes']" class="btn btn-danger">
+          <i class="fa fa-arrow-left"></i>Regresar
+        </button>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+
+        <form (ngSubmit)="guardar(f)" #f="ngForm">
+
+            <div class="form-group">
+                <label>Titulo</label>
+                <input [(ngModel)]="vacante.titulo" name="titulo" type="text" class="form-control" placeholder="Titulo de la vacante" required>
+            </div>
+
+            <div class="form-group">
+                <label>Empresa</label>
+                <input [(ngModel)]="vacante.empresa" name="empresa" type="text" class="form-control" placeholder="Nombre de la empresa que contrata">
+            </div>
+
+            <div class="form-group">
+                <label>Descripcion</label>
+                <input [(ngModel)]="vacante.descripcion" name="descripcion" type="text" class="form-control" placeholder="Inserte la descripcion de la vacante">
+            </div>
+
+            <div class="form-group">
+                <label>Responsable</label>
+                <input [(ngModel)]="vacante.responsable" name="responsable" type="text" class="form-control" placeholder="Indique si existe un responsable para la vacante">
+            </div>
+
+
+
+
+
+
+            <hr>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                      <i class="fa fa-save fa-2x"></i></button>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>

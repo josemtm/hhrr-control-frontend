@@ -1,0 +1,14 @@
+
+
+<div class="card-columns">
+    <div (click)="seleccionar(profesional.id)" class="card" *ngFor="let profesional of profesionales">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{profesional.nombre}}</h5>
+            <p class="card-text">Profesion: {{profesional.profesion}}</p>
+            <p class="card-text">{{profesional.texto}}</p>
+            <p class="card-text"><small class="text-muted">Experiencia: {{profesional.experiencia}}</small></p>
+            <p class="card-text"><small class="text-muted">{{profesional.contacto}}</small></p>
+        </div>
+    </div>
+</div>

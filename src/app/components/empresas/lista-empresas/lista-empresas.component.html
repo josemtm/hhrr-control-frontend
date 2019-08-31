@@ -1,0 +1,13 @@
+
+
+<div class="card-columns">
+    <div (click)="seleccionar(empresa.id)" class="card" *ngFor="let empresa of empresas">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{empresa.nombre}}</h5>
+            <p class="card-text">{{empresa.rubro}}</p>
+            <p class="card-text"><small class="text-muted">{{empresa.email}}</small></p>
+            <p class="card-text"><small class="text-muted">{{empresa.telefono}}</small></p>
+        </div>
+    </div>
+</div>

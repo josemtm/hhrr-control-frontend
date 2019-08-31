@@ -1,0 +1,50 @@
+<div>
+    <h2>Crear <small>nueva notificacion</small></h2>
+</div>
+
+<div class="row text-right">
+    <div class="col">
+
+        <button [routerLink]="['/notificaciones']" class="btn btn-danger">
+          <i class="fa fa-arrow-left"></i>Regresar
+        </button>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+
+        <form (ngSubmit)="guardar(f)" #f="ngForm">
+
+            <div class="form-group">
+                <label>Titulo</label>
+                <input [(ngModel)]="notificacion.titulo" name="titulo" type="text" class="form-control" placeholder="Titulo de la notificacion">
+            </div>
+
+            <div class="form-group">
+                <label>Texto</label>
+                <input [(ngModel)]="notificacion.texto" name="texto" type="text" class="form-control" placeholder="Texto de la notificacion">
+            </div>
+
+            <div class="form-group">
+                <label>Imagen</label>
+                <input [(ngModel)]="notificacion.foto" name="foto" type="text" class="form-control" placeholder="deshabilitado por ahora" disabled="disable">
+            </div>
+
+
+
+
+
+
+            <hr>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                      <i class="fa fa-save fa-2x"></i></button>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div>
+    <h2>Registrar <small>profesional</small></h2>
+</div>
+
+<div class="row text-right">
+    <div class="col">
+
+        <button [routerLink]="['/profesionales']" class="btn btn-danger">
+          <i class="fa fa-arrow-left"></i>Regresar
+        </button>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+
+        <form (ngSubmit)="guardar(f)" #f="ngForm">
+
+            <div class="form-group">
+                <label>Nombre</label>
+                <input [(ngModel)]="profesional.nombre" name="nombre" type="text" class="form-control" placeholder="Cambiar nombre">
+            </div>
+
+            <div class="form-group">
+                <label>Profesion</label>
+                <input [(ngModel)]="profesional.profesion" name="profesion" type="text" class="form-control" placeholder="Cambiar profesion">
+            </div>
+
+            <div class="form-group">
+                <label>Texto</label>
+                <input [(ngModel)]="profesional.texto" name="texto" type="text" class="form-control" placeholder="Cambiar Texto">
+            </div>
+
+            <div class="form-group">
+                <label>Experiencia</label>
+                <input [(ngModel)]="profesional.experiencia" name="experiencia" type="text" class="form-control" placeholder="Cambiar experiencia">
+            </div>
+
+            <div class="form-group">
+                <label>Contacto</label>
+                <input [(ngModel)]="profesional.contacto" name="contacto" type="text" class="form-control" placeholder="Introducir un metodo de contacto">
+            </div>
+
+
+            <!--Pendiente el estado-->
+
+
+
+
+            <hr>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                      <i class="fa fa-save fa-2x"></i></button>
+            </div>

@@ -1,0 +1,40 @@
+<div>
+    <h2>Cerrar vacante:<small>{{vacante.titulo}}</small></h2>
+</div>
+
+<div class="row text-right">
+    <div class="col">
+
+        <button [routerLink]="['/vacantes']" routerLinkActive="router-link-active" class="btn btn-danger" routerLink="/heroes">
+            <i class="fa fa-arrow-left"></i>Regresar
+          </button>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+
+        <form (ngSubmit)="guardar(f)" #f="ngForm">
+
+            <div class="form-group">
+                <label>Finalizada por</label>
+                <input [(ngModel)]="vacante.responsable" name="responsable" type="text" class="form-control" placeholder="Nombre de la persona que finalizo la vacante">
+            </div>
+
+            <div class="form-group">
+                <label>Asignada a</label>
+                <input [(ngModel)]="vacante.asignacion" name="asignacion" type="text" class="form-control" placeholder="Nombre del profesional asignado">
+            </div>
+
+            <hr>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                      <i class="fa fa-save fa-2x"></i></button>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>

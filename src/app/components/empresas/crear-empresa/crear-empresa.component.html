@@ -1,0 +1,57 @@
+<div>
+    <h2>Crear
+        <small>nueva empresa</small>
+    </h2>
+</div>
+
+<div class="row text-right">
+    <div class="col">
+
+        <button [routerLink]="['/empresas']" class="btn btn-danger">
+          <i class="fa fa-arrow-left"></i>Regresar
+        </button>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+
+        <form (ngSubmit)="guardar(f)" #f="ngForm">
+
+            <div class="form-group">
+                <label>Nombre</label>
+                <input [(ngModel)]="empresa.nombre" name="nombre" type="text" class="form-control" placeholder="Inserte el Nombre de la empresa">
+            </div>
+
+            <div class="form-group">
+                <label>Rubro</label>
+                <input [(ngModel)]="empresa.rubro" name="texto" type="text" class="form-control" placeholder="Inserte el Rubro de la empresa">
+            </div>
+
+            <div class="form-group">
+                <label>Telefono</label>
+                <input [(ngModel)]="empresa.telefono" name="telefono" type="text" class="form-control" placeholder="Telefono">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input [(ngModel)]="empresa.email" name="email" type="text" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label>Imagen</label>
+                <input [(ngModel)]="empresa.foto" name="foto" type="text" class="form-control" placeholder="No disponible" disabled="disable">
+            </div>
+
+
+
+
+
+
+            <hr>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary w-25">
+                      <i class="fa fa-save fa-2x"></i>
+                </button>
+            </div>

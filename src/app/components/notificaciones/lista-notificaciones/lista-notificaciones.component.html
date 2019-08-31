@@ -1,0 +1,19 @@
+<div>
+    <h2>Bienvenido,<small> Empresa de ejemplo</small></h2>
+</div>
+
+
+<div class="text-right m-5">
+    <button [routerLink]="['/crear-notificacion']" class="btn btn-success"><strong> Crear Notificacion</strong></button>
+</div>
+
+
+<div (click)="seleccionar(notificacion.id)" class="card mb-3" *ngFor="let notificacion of notificaciones">
+
+    <img src="" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{notificacion.titulo}}</h5>
+        <p class="card-text">{{notificacion.texto}}</p>
+        <p class="card-text"><small class="text-muted">{{notificacion.creado_en}}</small></p>
+    </div>
+</div>

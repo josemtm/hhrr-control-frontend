@@ -1,0 +1,22 @@
+<div>
+    <h2>Vacantes <small>Ocupadas</small></h2>
+</div>
+
+<div class="card text-center mt-5" *ngFor="let vacante of vacantes">
+    <div class="card-header">
+        {{vacante.empresa}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{vacante.titulo}}</h5>
+        <p class="card-text">{{vacante.descripcion}}</p>
+    </div>
+    <div class="card-footer text-muted row">
+        <div class="col-6 text-left">
+            <p>{{vacante.creado_en}}</p>
+        </div>
+        <div class="col-6 text-right">
+            <p>Responsable: {{vacante.responsable}}</p>
+        </div>
+
+    </div>
+</div>
