@@ -3,12 +3,12 @@
 </div>
 
 
-<div class="text-right m-5">
-    <button [routerLink]="['/crear-notificacion']" class="btn btn-success"><strong> Crear Notificacion</strong></button>
+<div class="text-right">
+    <button [routerLink]="['/crear-notificacion']" class="btn btn-success"> <i class="fas fa-plus"></i> Crear Notificacion</button>
 </div>
 
 
-<div (click)="seleccionar(notificacion.id)" class="card mb-3" *ngFor="let notificacion of notificaciones">
+<div (click)="seleccionar(notificacion.id)" class="card mb-3 puntero" *ngFor="let notificacion of notificaciones">
 
     <img src="" class="card-img-top" alt="...">
     <div class="card-body">

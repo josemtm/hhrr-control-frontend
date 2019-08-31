@@ -1,7 +1,12 @@
-
+<button [routerLink]="['/crear-profesional']" class="btn btn-success">
+    <i class="fas fa-user-plus"></i> Registrar Profesional
+  </button>
+  <button [routerLink]="['/contactar-profesional']" class="btn btn-success">
+    <i class="fas fa-envelope "></i> Contactar profesional
+  </button>
 
 <div class="card-columns">
-    <div (click)="seleccionar(profesional.id)" class="card" *ngFor="let profesional of profesionales">
+    <div (click)="seleccionar(profesional.id)" class="card puntero" *ngFor="let profesional of profesionales">
         <img src="" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">{{profesional.nombre}}</h5>

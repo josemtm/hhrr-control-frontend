@@ -1,7 +1,9 @@
-
+<button [routerLink]="['/crear-empresa']" class="btn btn-success">
+    <i class="fas fa-plus"></i> Registrar Empresa
+  </button>
 
 <div class="card-columns">
-    <div (click)="seleccionar(empresa.id)" class="card" *ngFor="let empresa of empresas">
+    <div (click)="seleccionar(empresa.id)" class="card puntero" *ngFor="let empresa of empresas">
         <img src="" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">{{empresa.nombre}}</h5>
