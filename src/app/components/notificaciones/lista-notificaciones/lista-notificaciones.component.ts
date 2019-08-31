@@ -19,6 +19,7 @@ export class ListaNotificacionesComponent {
               private router:Router) { 
    notificacionesService.getNotificaciones().subscribe((data:NotificacionModel[])=>{
      this.notificaciones=data;
+     console.log(this.notificaciones)
    });
    
   }

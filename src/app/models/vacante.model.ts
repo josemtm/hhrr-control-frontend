@@ -9,7 +9,7 @@ export class VacanteModel {
     titulo:string;
 
     constructor(){
-        this.estado="activa";
+        this.estado="abierta";
         this.responsable="publica";
     }
 }

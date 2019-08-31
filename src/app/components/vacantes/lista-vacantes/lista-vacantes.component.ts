@@ -14,6 +14,7 @@ export class ListaVacantesComponent  {
   constructor(vacantesService:VacantesService,private router: Router) {
     vacantesService.getVacantes().subscribe((data:VacanteModel[])=>{
       this.vacantes=data;
+      console.log(this.vacantes)
       
     })
    }
