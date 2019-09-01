@@ -8,12 +8,13 @@
 </div>
 
 
-<div (click)="seleccionar(notificacion.id)" class="card mb-3 puntero" *ngFor="let notificacion of notificaciones">
-
-    <img src="" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">{{notificacion.titulo}}</h5>
-        <p class="card-text">{{notificacion.texto}}</p>
-        <p class="card-text"><small class="text-muted">{{notificacion.creado_en}}</small></p>
+<div class="card-columns">
+    <div (click)="seleccionar(notificacion.id)" class="card puntero" *ngFor="let notificacion of notificaciones">
+        <img src="{{notificacion.foto}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{notificacion.titulo}}</h5>
+            <p class="card-text">{{notificacion.texto}}</p>
+            <p class="card-text"><small class="text-muted">{{notificacion.creado_en}}</small></p>
+        </div>
     </div>
 </div>

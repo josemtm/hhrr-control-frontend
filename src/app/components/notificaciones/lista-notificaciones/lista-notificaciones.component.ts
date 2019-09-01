@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NotificacionesService } from '../../../services/notificaciones.service';
 import { NotificacionModel } from '../../../models/notificacion.model';
 import { Router } from '@angular/router';
@@ -11,17 +11,17 @@ import { Router } from '@angular/router';
   templateUrl: './lista-notificaciones.component.html',
   styleUrls: ['./lista-notificaciones.component.css']
 })
-export class ListaNotificacionesComponent {
+export class ListaNotificacionesComponent implements OnInit {
   
   notificaciones:NotificacionModel[]=[];
 
   constructor(private notificacionesService:NotificacionesService,
-              private router:Router) { 
-   notificacionesService.getNotificaciones().subscribe((data:NotificacionModel[])=>{
-     this.notificaciones=data;
-     console.log(this.notificaciones)
-   });
-   
+              private router:Router) {  }
+
+  ngOnInit(): void {
+    this.notificacionesService.getNotificaciones().subscribe((data:NotificacionModel[])=>{
+      this.notificaciones=data;
+    })
   }
 
   seleccionar(id){

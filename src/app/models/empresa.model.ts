@@ -7,6 +7,10 @@ export class EmpresaModel {
     rubro:string;
     email:string;
 
+    constructor(){
+        this.foto="assets/img/foto.png"
+    }
+
     
 
 }

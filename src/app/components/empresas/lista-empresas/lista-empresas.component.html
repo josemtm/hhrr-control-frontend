@@ -4,7 +4,7 @@
 
 <div class="card-columns">
     <div (click)="seleccionar(empresa.id)" class="card puntero" *ngFor="let empresa of empresas">
-        <img src="" class="card-img-top" alt="...">
+        <img src="{{empresa.foto}}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">{{empresa.nombre}}</h5>
             <p class="card-text">{{empresa.rubro}}</p>

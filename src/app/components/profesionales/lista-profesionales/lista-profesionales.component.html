@@ -7,7 +7,7 @@
 
 <div class="card-columns">
     <div (click)="seleccionar(profesional.id)" class="card puntero" *ngFor="let profesional of profesionales">
-        <img src="" class="card-img-top" alt="...">
+        <img src="{{profesional.foto}}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">{{profesional.nombre}}</h5>
             <p class="card-text">Profesion: {{profesional.profesion}}</p>

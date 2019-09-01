@@ -6,4 +6,8 @@ export class NotificacionModel {
     foto:string;
     creado_en:string;
 
+    constructor(){
+        this.foto="assets/img/foto.png"
+    }
+
 }

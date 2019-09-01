@@ -11,13 +11,16 @@ import { Router } from '@angular/router';
 export class ListaVacantesComponent  {
 
   vacantes:VacanteModel[]=[];
-  constructor(vacantesService:VacantesService,private router: Router) {
-    vacantesService.getVacantes().subscribe((data:VacanteModel[])=>{
+  constructor(private vacantesService:VacantesService,private router: Router) {}
+
+   ngOnInit(): void {
+    this.vacantesService.getVacantes().subscribe((data:VacanteModel[])=>{
       this.vacantes=data;
-      console.log(this.vacantes)
+      
       
     })
-   }
+ }
+   
 
    cerrarVacante(vacanteId){
      this.router.navigate(["cerrar-vacante",vacanteId]);
