@@ -9,7 +9,7 @@ export class ProfesionalesService {
 
   constructor(private http:HttpClient) { }
 
-  url:string="http://localhost:8080/trabajadores/"
+  url:string="https://duman-control.herokuapp.com/trabajadores/"
   
   getProfesionales(){
    return  this.http.get(this.url);

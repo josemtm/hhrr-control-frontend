@@ -9,7 +9,7 @@ export class EmpresasService {
 
   constructor(private http:HttpClient) {  }
 
-  url="http://localhost:8080/empresas/";
+  url="https://duman-control.herokuapp.com/empresas/";
   
   getEmpresas(){
     return this.http.get(this.url);

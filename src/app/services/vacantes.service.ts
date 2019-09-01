@@ -10,7 +10,7 @@ export class VacantesService {
 
   constructor(private http:HttpClient) { }
 
-  url:string="http://localhost:8080/trabajos/";
+  url:string="https://duman-control.herokuapp.com/trabajos/";
 
   getVacantes(){
     return this.http.get(`${this.url}abiertos`);

@@ -9,7 +9,7 @@ export class NotificacionesService {
 
   constructor(private http:HttpClient) { }
 
-  url:string="http://localhost:8080/notificaciones/";
+  url:string="https://duman-control.herokuapp.com/notificaciones/";
 
   getNotificaciones(){
     return this.http.get(this.url);
