@@ -26,7 +26,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   imports: [
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes,{
-      useHash: true
+      useHash: false
     }),
     SidebarModule,
     NavbarModule,
