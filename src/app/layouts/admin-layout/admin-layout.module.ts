@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
 import { CrearEmpresaComponent }       from '../../components/empresas/crear-empresa/crear-empresa.component';
-import { ListaNotificacionesComponent } from '../../components/notificaciones/lista-notificaciones/lista-notificaciones.component';
+
 import { CrearNotificacionComponent } from '../../components/notificaciones/crear-notificacion/crear-notificacion.component';
 import { ListaVacantesComponent } from '../../components/vacantes/lista-vacantes/lista-vacantes.component';
 import { CrearVacanteComponent } from '../../components/vacantes/crear-vacante/crear-vacante.component';
@@ -22,6 +22,7 @@ import { EmpresaComponent } from '../../components/empresas/empresa/empresa.comp
 import { ProfesionalComponent } from '../../components/profesionales/profesional/profesional.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ListaNotificacionesComponent } from 'app/components/notificaciones/lista-notificaciones/lista-notificaciones.component';
 
 @NgModule({
   imports: [
@@ -32,8 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   declarations: [
     CrearEmpresaComponent,
-    ListaNotificacionesComponent,
     CrearNotificacionComponent,
+    ListaNotificacionesComponent,
     ListaVacantesComponent,
     CrearVacanteComponent,
     VacantesOcupadasComponent,

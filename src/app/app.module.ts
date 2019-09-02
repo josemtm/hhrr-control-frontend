@@ -16,14 +16,13 @@ import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common'
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { ListaNotificacionesComponent } from './components/notificaciones/lista-notificaciones/lista-notificaciones.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    ListaNotificacionesComponent
   ],
   imports: [
     BrowserAnimationsModule,
