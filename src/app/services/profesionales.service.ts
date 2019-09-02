@@ -21,7 +21,7 @@ export class ProfesionalesService {
    return this.http.post(`${this.url}guardar/`,profesional);
   }
   eliminarProfesional(id){
-    return this.http.delete(`${this.url}/eliminar/${id}`);
+    return this.http.delete(`${this.url}eliminar/${id}`);
   }
   
 }

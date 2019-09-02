@@ -27,6 +27,6 @@ export class ProfesionalComponent  {
   }
   eliminar(id){
     this.profesionalesService.eliminarProfesional(id).subscribe();
-    this.router.navigate(["profesional"]);
+    this.router.navigate(["profesionales"]);
   }
 }
